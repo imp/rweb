@@ -155,8 +155,8 @@
 //! }
 //!
 //! #[get("/param/{a}/{b}")]
-//! fn body_between_path_params(a: u32, #[json] body: LoginForm, b: u32) ->
-//! String {     assert_eq!(body.id, "TEST_ID");
+//! fn body_between_path_params(a: u32, #[json] body: LoginForm, b: u32) -> String {
+//!     assert_eq!(body.id, "TEST_ID");
 //!     assert_eq!(body.password, "TEST_PASSWORD");
 //!     (a + b).to_string()
 //! }
